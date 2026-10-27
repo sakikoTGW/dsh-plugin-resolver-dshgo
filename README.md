@@ -1,5 +1,13 @@
 # dsh-plugin-resolver-dshgo
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/dsh-plugin-resolver-dshgo"><img alt="npm" src="https://img.shields.io/npm/v/dsh-plugin-resolver-dshgo?style=flat-square&color=4D6BFE&logo=npm&logoColor=white"></a>
+  <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/license-MIT-263146?style=flat-square"></a>
+  <img alt="dsh-go" src="https://img.shields.io/badge/dsh--go-Android%20%C2%B7%20arm64-4D6BFE?style=flat-square">
+  <img alt="DSH" src="https://img.shields.io/badge/DSH-0.2.0--rc.2%2B-4D6BFE?style=flat-square">
+  <img alt="Node" src="https://img.shields.io/badge/node-%3E%3D20-339933?style=flat-square&logo=node.js&logoColor=white">
+</p>
+
 > [dsh-plugin-resolver](https://github.com/sakikoTGW/dsh-plugin-resolver) 的 **dsh-go 手机 harness 适配版**：工具名、参数、版本选择规则、安装路径全部沿用上游；改动只针对“在手机上跑”和“在 dsh-go 里看”。
 
 - 包名：`dsh-plugin-resolver-dshgo` · 版本：`0.1.3-go.1` · License：MIT（上游 sakikoTGW，本仓库为适配分支）
@@ -8,11 +16,16 @@
 
 ## 安装
 
-**GitHub 源（推荐，锁 commit）**
+**npm（推荐）**
 
 ```sh
-# 本仓库首个发布提交（v0.1.3-go.1）
-dsh plugin --profile web add github:sakikoTGW/dsh-plugin-resolver-dshgo#838f74751e697bdf91e995bbbb2ddaa0c7558b65
+dsh plugin --profile web add dsh-plugin-resolver-dshgo
+```
+
+**GitHub 源（锁 tag，或换成 Release 页里的完整 commit）**
+
+```sh
+dsh plugin --profile web add github:sakikoTGW/dsh-plugin-resolver-dshgo#v0.1.3-go.1
 ```
 
 **本地开发（装的是指向 `plugin/` 的链接，别删这个目录）**

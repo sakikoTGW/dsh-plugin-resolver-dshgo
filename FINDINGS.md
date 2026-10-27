@@ -2,7 +2,9 @@
 
 2026-10-27，在 dsh-go（Android · arm64 proot）上跑 `dsh-plugin-resolver-dshgo` 的适配与消融时记录。每条都附证据与建议，按“是否影响普通用户”排序。
 
-环境：dsh-go 内测包（Android 8+ / arm64）· DSH `0.2.1-rc.2` · Node `24.22.1` · pnpm `11.28.5` · `DSH_PERMISSION_MODE=danger-full-access`。
+> 已汇总提交到 dsh-go 仓库：**<https://github.com/ccch1mneyyy/dsh-go/issues/57>**（六合一，App 0.9.2，含侧边栏截图）。
+
+环境：dsh-go App `0.9.2`（内测包，Android 8+ / arm64）· DSH `0.2.1-rc.2` · Node `24.22.1` · pnpm `11.28.5` · `DSH_PERMISSION_MODE=danger-full-access`。
 
 ## 1. 一次性 `headless` 运行会污染 App 侧边栏，且无法与真实对话区分
 

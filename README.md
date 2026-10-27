@@ -8,10 +8,11 @@
 
 ## 安装
 
-**GitHub 源（推荐，建议锁 commit）**
+**GitHub 源（推荐，锁 commit）**
 
 ```sh
-dsh plugin --profile web add github:sakikoTGW/dsh-plugin-resolver-dshgo#<40位commit>
+# 本仓库首个发布提交（v0.1.3-go.1）
+dsh plugin --profile web add github:sakikoTGW/dsh-plugin-resolver-dshgo#838f74751e697bdf91e995bbbb2ddaa0c7558b65
 ```
 
 **本地开发（装的是指向 `plugin/` 的链接，别删这个目录）**

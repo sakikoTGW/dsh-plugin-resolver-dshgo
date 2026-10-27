@@ -1,0 +1,20 @@
+{
+ "tag": "quick-b",
+ "profile": "abx-quick2",
+ "wallSeconds": 54.6,
+ "exit": 0,
+ "steps": 15,
+ "toolCalls": 14,
+ "tools": {
+  "plugin_resolve": 1,
+  "plugin_install": 1,
+  "plugin_status": 1,
+  "bash": 11
+ },
+ "tokens": {
+  "inputTokens": 9743,
+  "outputTokens": 4502,
+  "cacheReadTokens": 148736
+ },
+ "final": "安装已完成，quick 校验结果如下：\n\n1. **安装成功**：`dsh-builtin-browser@0.4.15` 已从 npmmirror 装入当前 profile `abx-quick2`；该 profile 的 `package.json` 中依赖和 `dsh.profile.bundles` 都已写入，`node_modules/dsh-builtin-browser` 文件齐全，pnpm 日志显示 `+ dsh-builtin-browser 0.4.15`。\n2. **加载配置已生效、等待重启**：`--dump-config` 已正确展开它的 4 个 loader 条目（根行、browser、browser-electron、tool-browser），说明该包能被正常编排加载；但当前引擎里 `fiberPhase=missing`，因为 bundle 集合变了，按提"
+}

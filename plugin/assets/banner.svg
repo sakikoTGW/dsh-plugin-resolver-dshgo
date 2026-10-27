@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" font-family="WenQuanYi Micro Hei, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060A12"/>
+      <stop offset="0.55" stop-color="#0A1120"/>
+      <stop offset="1" stop-color="#0D1830"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4D6BFE" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#4D6BFE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#35D07F" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#35D07F" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#22314F"/>
+    </pattern>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4D6BFE"/>
+      <stop offset="1" stop-color="#35D07F"/>
+    </linearGradient>
+    <linearGradient id="cardStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A3C60"/>
+      <stop offset="1" stop-color="#16233B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#dots)" opacity="0.55"/>
+  <circle cx="1090" cy="120" r="330" fill="url(#glow)"/>
+  <circle cx="250" cy="560" r="280" fill="url(#glow2)"/>
+  <rect x="0" y="0" width="6" height="640" fill="url(#line)"/>
+
+  <!-- badge -->
+  <rect x="72" y="62" width="292" height="40" rx="20" fill="#0D1728" stroke="#24344F"/>
+  <circle cx="94" cy="82" r="5" fill="#35D07F"/>
+  <text x="110" y="88" font-size="17" fill="#A9BCD8">dsh-go · 手机 Harness</text>
+
+  <!-- headline -->
+  <text x="72" y="176" font-size="62" font-weight="bold" fill="#F3F7FF">装插件，一次调用</text>
+  <text x="74" y="232" font-size="28" fill="#7C93C7" letter-spacing="1">dsh-plugin-solve-go</text>
+  <text x="72" y="284" font-size="23" fill="#C9D6EE">搜索 → 选兼容版本 → 安装 → 校验</text>
+  <text x="72" y="316" font-size="20" fill="#8FA3C8">手机上一条链路走完，结果直接画成 dsh-go 原生卡片</text>
+
+  <!-- terminal mock -->
+  <rect x="852" y="118" width="356" height="300" rx="14" fill="#0A1220" stroke="url(#cardStroke)"/>
+  <rect x="852" y="118" width="356" height="40" rx="14" fill="#111C30"/>
+  <rect x="852" y="144" width="356" height="14" fill="#111C30"/>
+  <circle cx="878" cy="138" r="5" fill="#FF6B6B"/>
+  <circle cx="896" cy="138" r="5" fill="#FFC94D"/>
+  <circle cx="914" cy="138" r="5" fill="#35D07F"/>
+  <text x="1184" y="143" font-size="13" fill="#6F84A8" text-anchor="end">dsh-go engine</text>
+  <g font-size="14.5" font-family="WenQuanYi Micro Hei Mono, monospace">
+    <text x="876" y="190" fill="#8FA3C8">$ plugin_install</text>
+    <text x="876" y="212" fill="#E7EEFC">dsh-builtin-browser</text>
+    <text x="876" y="250" fill="#7C93C7">install:</text>
+    <text x="962" y="250" fill="#9FE8C1">applied</text>
+    <text x="876" y="278" fill="#7C93C7">verify:</text>
+    <text x="944" y="278" fill="#9FE8C1">fiberPhase=active</text>
+    <text x="876" y="306" fill="#7C93C7">restart:</text>
+    <text x="958" y="306" fill="#9FE8C1">not required</text>
+    <text x="876" y="334" fill="#7C93C7">deep:</text>
+    <text x="932" y="334" fill="#9FE8C1">booted, all entries active</text>
+  </g>
+  <rect x="866" y="360" width="328" height="1" fill="#1B2A44"/>
+  <text x="876" y="388" font-size="14" fill="#6F84A8">4 个工具 · 目录 7211 条 · MIT</text>
+
+  <!-- stat cards -->
+  <g>
+    <rect x="72" y="356" width="240" height="148" rx="16" fill="#0E1727" stroke="url(#cardStroke)"/>
+    <text x="94" y="390" font-size="15" fill="#8FA3C8">端到端耗时</text>
+    <text x="94" y="446" font-size="46" font-weight="bold" fill="#9FE8C1">−74%</text>
+    <text x="94" y="478" font-size="16" fill="#6F84A8">187 s → 48.4 s</text>
+
+    <rect x="328" y="356" width="240" height="148" rx="16" fill="#0E1727" stroke="url(#cardStroke)"/>
+    <text x="350" y="390" font-size="15" fill="#8FA3C8">Token 消耗</text>
+    <text x="350" y="446" font-size="46" font-weight="bold" fill="#9FE8C1">−93%</text>
+    <text x="350" y="478" font-size="16" fill="#6F84A8">29.4k → 1.9k</text>
+
+    <rect x="584" y="356" width="240" height="148" rx="16" fill="#0E1727" stroke="url(#cardStroke)"/>
+    <text x="606" y="390" font-size="15" fill="#8FA3C8">工具调用</text>
+    <text x="606" y="446" font-size="46" font-weight="bold" fill="#8FB0FF">1 次</text>
+    <text x="606" y="478" font-size="16" fill="#6F84A8">2 个 model step</text>
+  </g>
+
+  <!-- feature chips -->
+  <g font-size="16" fill="#B8C8E6">
+    <rect x="72" y="526" width="176" height="38" rx="19" fill="#101B2F" stroke="#22314F"/>
+    <text x="96" y="551">dsh-go 原生卡片</text>
+    <rect x="262" y="526" width="168" height="38" rx="19" fill="#101B2F" stroke="#22314F"/>
+    <text x="286" y="551">GitHub 镜像回退</text>
+    <rect x="444" y="526" width="160" height="38" rx="19" fill="#101B2F" stroke="#22314F"/>
+    <text x="468" y="551">npmmirror 优先</text>
+    <rect x="618" y="526" width="150" height="38" rx="19" fill="#101B2F" stroke="#22314F"/>
+    <text x="642" y="551">deep 校验可选</text>
+  </g>
+
+  <!-- footer -->
+  <rect x="72" y="590" width="820" height="34" rx="8" fill="#0A121F" stroke="#1B2A44"/>
+  <text x="88" y="612" font-size="15" fill="#9FB3D4" font-family="WenQuanYi Micro Hei Mono, monospace">dsh plugin --profile web add dsh-plugin-solve-go</text>
+  <text x="1206" y="612" font-size="14" fill="#5E7296" text-anchor="end">实测 DSH 0.2.1-rc.2 · 上游 sakikoTGW</text>
+</svg>

@@ -1,0 +1,17 @@
+{
+ "tag": "deep-b",
+ "profile": "abx-deep",
+ "wallSeconds": 48.4,
+ "exit": 0,
+ "steps": 2,
+ "toolCalls": 1,
+ "tools": {
+  "plugin_install": 1
+ },
+ "tokens": {
+  "inputTokens": 1618,
+  "outputTokens": 309,
+  "cacheReadTokens": 13952
+ },
+ "final": "安装完成：`dsh-builtin-browser@0.4.15` 已作为 npm 插件从 npmmirror 源装入当前 profile，插件包已启用（enabled）。深度校验已通过：插件在一次冷启动中完整加载，所有入口均激活，启动耗时约 26.7 秒。由于 bundle 集合发生变化，当前运行中的引擎需重启一次，新插件才会生效；重启请从 dsh-go 的引擎页面操作，不要另起嵌套的 `dsh` 进程。"
+}

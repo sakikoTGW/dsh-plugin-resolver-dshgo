@@ -1,0 +1,18 @@
+{
+ "tag": "plain-a",
+ "profile": "abx-plain",
+ "wallSeconds": 187,
+ "exit": 0,
+ "steps": 21,
+ "toolCalls": 33,
+ "tools": {
+  "bash": 32,
+  "read": 1
+ },
+ "tokens": {
+  "inputTokens": 21099,
+  "outputTokens": 8324,
+  "cacheReadTokens": 432000
+ },
+ "final": "已在当前 `abx-plain` profile 中安装 `dsh-builtin-browser@0.4.15`，`dsh plugin add` 同时把它写入了 `dsh.profile.bundles`。`dsh --profile abx-plain --dump-config` 能展开插件的 4 个加载行，headless 启动没有任何报错，agent 侧看到全部 34 个 `dsh_browser_*` 工具。实际调用 `dsh_browser_restrict` 两次，分别返回 “Restricted to: dsh_browser_snapshot” 和 “Restriction lifted.”，说明插件已加载且工具可真正执行。"
+}

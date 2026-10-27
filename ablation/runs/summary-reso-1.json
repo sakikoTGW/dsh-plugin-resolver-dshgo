@@ -1,0 +1,20 @@
+{
+ "tag": "reso-1",
+ "wallSeconds": null,
+ "exit": 0,
+ "steps": 19,
+ "toolCalls": 21,
+ "tools": {
+  "plugin_resolve": 1,
+  "plugin_status": 2,
+  "plugin_install": 1,
+  "bash": 15,
+  "read": 2
+ },
+ "tokens": {
+  "inputTokens": 9487,
+  "outputTokens": 5713,
+  "cacheReadTokens": 241152
+ },
+ "final": "已在当前 profile `ablate-reso` 装好 `dsh-builtin-browser@0.4.15`，它已写入 `package.json` 的 `dsh.profile.bundles` 和 `pnpm-lock.yaml`，`plugin_status` 显示 `enabled=true`。为确认真的能加载，我用同一 profile 新起了一个 headless 引擎实测：启动退出码 0、日志无任何加载错误，且模型侧实际列出了 34 个 `dsh_browser_*` 工具（open/snapshot/click/fill/screenshot 等）。唯一要提醒的是当前正在运行的引擎尚未重启，所以 `plugin_status` 里这条 bundle 暂时没有 loader entry，重启引擎后才会在本会话与 UI 里挂载生效。"
+}

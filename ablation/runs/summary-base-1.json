@@ -1,0 +1,18 @@
+{
+ "tag": "base-1",
+ "wallSeconds": 337,
+ "exit": 0,
+ "steps": 37,
+ "toolCalls": 43,
+ "tools": {
+  "bash": 42,
+  "skill": 1
+ },
+ "tokens": {
+  "inputTokens": 56688,
+  "outputTokens": 16014,
+  "cacheReadTokens": 1487872
+ },
+ "note": "wall from session event span; wall clock not captured",
+ "final": "已在当前 profile（ablate-plain）通过 `dsh plugin` 安装 `dsh-builtin-browser@0.4.15`，依赖已写入 package.json，`dsh.profile.bundles` 也自动登记完成。随后实际启动 `dsh --profile ablate-plain headless` 验证：`ctx.browser` 服务成功挂载，34 个 `dsh_browser_*` 工具全部注册，启动无报错，冒烟任务返回 `LOAD_OK`。该 profile 是无图形界面的 headless 环境，因此确认的是安装与加载成功，真正弹出浏览器窗口仍需有显示环境的宿主。"
+}

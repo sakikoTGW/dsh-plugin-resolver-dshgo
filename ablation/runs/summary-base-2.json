@@ -1,0 +1,16 @@
+{
+ "tag": "base-2",
+ "wallSeconds": 215.1,
+ "exit": 0,
+ "steps": 42,
+ "toolCalls": 55,
+ "tools": {
+  "bash": 55
+ },
+ "tokens": {
+  "inputTokens": 42265,
+  "outputTokens": 17918,
+  "cacheReadTokens": 1546880
+ },
+ "final": "已把 `dsh-builtin-browser@0.4.15` 装入当前 profile（`ablate-plain2`）：`dependencies` 和 `dsh.profile.bundles` 均已写入，`node_modules`、`pnpm-lock.yaml` 已生成。  \n真实验证通过：重新启动了一个 headless 进程来执行任务，退出码为 0，且没有插件报错；合成配置中出现了 `browser`、`browser-electron`、`tool-browser` 这三个插件层，该会话的工具清单也注册了全部 **34 个 `dsh_browser_*` 工具**。  \n当前正在运行的会话要新开或重启后才会加载新插件；另外 Electron 二进制没有预下载，实际打开网页时插件会提示运行 `npx install-electron`，但“安装成功且能加载”已经确认。"
+}

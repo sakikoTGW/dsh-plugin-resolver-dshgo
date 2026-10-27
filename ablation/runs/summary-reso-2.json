@@ -1,0 +1,19 @@
+{
+ "tag": "reso-2",
+ "wallSeconds": 125.3,
+ "exit": 0,
+ "steps": 18,
+ "toolCalls": 20,
+ "tools": {
+  "plugin_resolve": 1,
+  "plugin_status": 3,
+  "plugin_install": 1,
+  "bash": 15
+ },
+ "tokens": {
+  "inputTokens": 8940,
+  "outputTokens": 6295,
+  "cacheReadTokens": 252288
+ },
+ "final": "1. 插件已安装成功：`dsh-builtin-browser@0.4.15` 已写入当前 profile `ablate-reso2` 的 `package.json`，依赖列表和 `dsh.profile.bundles` 两处都有它，且 `enabled=true`。\n2. 已验证它能加载：`--dump-config` 显示它贡献了 4 个 loader 条目（`dsh-builtin-browser`、`browser`、`browser-electron` 和 `tool-browser`），在同一个 profile 里另外启动一次 headless 引擎时，启动过程无报错、stderr 为空，工具注册表里出现了 33 个 `dsh_browser_*` 工具（含 `dsh_browser_open`、`dsh_browser_snapshot` 等）。\n3. 目前唯一还未生效"
+}

@@ -1,0 +1,6 @@
+# Bundle layer for dsh-plugin-resolver-dshgo: one host-only plugin row that adds
+# the plugin_* tools (each with a native dsh-go card). No client half, no
+# background services.
+- insert:
+    - id: plugin-resolver
+      name: 'dsh-plugin-resolver-dshgo'
